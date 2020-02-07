@@ -3380,3 +3380,7 @@ body.authentication-bg {
 .text-black {
 	color: #000000 !important;
 }
+
+.navbar-url:hover {
+	text-decoration: underline !important;
+}
