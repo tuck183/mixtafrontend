@@ -3358,7 +3358,7 @@ body.authentication-bg {
 }
 
 .navbar-custom-bg {
-	background-color: rgba(0,0,0, .2) !important;
+	background-color: rgba(255,255,255, .5) !important;
 }
 
 .color-white {
@@ -3367,4 +3367,16 @@ body.authentication-bg {
 
 .p-l-10 {
 	padding-left: 10px;
+}
+
+.btn-primary {
+	background-color: #F34334 !important;
+	border-color: #F34334 !important
+}
+.primary, primary:hover, .color-mixta {
+	color:	#F34334 !important
+}
+
+.text-black {
+	color: #000000 !important;
 }
