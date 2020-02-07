@@ -3286,9 +3286,7 @@ div.dt-button-info h2 {
 }
 
 body.authentication-bg {
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding-bottom: 0
+	background: rgba(0, 0, 0, 0) url("../images/sign_up.jpg") no-repeat fixed center center / cover;
 }
 
 .authentication-form .form-group .input-group-text {
@@ -3353,4 +3351,20 @@ body.authentication-bg {
 }
 .form-control {
 	border-radius: 0 !important;
+}
+
+.m-t-10 {
+	margin-top: 10rem !important;
+}
+
+.navbar-custom-bg {
+	background-color: rgba(0,0,0, .2) !important;
+}
+
+.color-white {
+	color: #ffffff !important;
+}
+
+.p-l-10 {
+	padding-left: 10px;
 }
