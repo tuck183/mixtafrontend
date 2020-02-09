@@ -3369,7 +3369,7 @@ body.authentication-bg {
 	padding-left: 10px;
 }
 
-.btn-primary {
+.btn-primary, .page-item.active .page-link {
 	background-color: #F34334 !important;
 	border-color: #F34334 !important
 }
@@ -3383,4 +3383,20 @@ body.authentication-bg {
 
 .navbar-url:hover {
 	text-decoration: underline !important;
+}
+
+.fs-13 {
+	font-size: 13px;
+}
+
+.fs-23 {
+	font-size: 23px;
+}
+
+.header-title {
+	text-transform: uppercase;
+}
+
+label {
+	font-weight: 400 !important;
 }

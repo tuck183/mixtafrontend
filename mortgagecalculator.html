@@ -11,6 +11,9 @@
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favico.png">
 
+        <!-- plugin css -->
+        <link href="assets/libs/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -206,7 +209,7 @@
                                     <form class="form-horizontal">
                                         <div class="row">
                                             <div class="col-lg-4 card-body">
-                                                <p><strong class="headings-color">Mortgage Calculator</strong></p>
+                                                <h4 class="headings-color color-mixta">Mortgage Calculator</h4>
                                                 <p class="text-muted">calculate your mortgage</p>
                                             </div>
                                             <!-- end col -->
@@ -255,9 +258,9 @@
                         <div class="col-xl-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="mb-3 header-title mt-0">Result</h4>
+                                    <h4 class="mb-3 header-title mt-0 color-mixta">Result</h4>
                                     <div class="table-responsive">
-                                        <table class="table m-0">
+                                        <table id="basic-datatable" class="table ">
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
@@ -329,6 +332,17 @@
 
         <!-- Vendor js -->
         <script src="assets/js/vendor.min.js"></script>
+
+        <!-- datatable js -->
+        <script src="assets/libs/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/libs/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="assets/libs/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/libs/datatables/responsive.bootstrap4.min.js"></script>
+
+        
+        <!-- Datatables init -->
+        <script src="assets/js/datatables.init.js"></script>
+        
         <!-- App js -->
         <script src="assets/js/app.min.js"></script>
 

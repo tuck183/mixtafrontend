@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <meta charset="utf-8" />
+        <title>Mixta Admin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Mixta" name="description" />
+        <meta content="vaultnoir" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favico.png">
+
+        <!-- plugin css -->
+        <link href="assets/libs/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body class="authentication-bg">
+
+                    <!-- Topbar Start -->
+<div class="navbar navbar-expand flex-column flex-md-row navbar-custom navbar-custom-bg">
+    <div class="container-fluid">
+        <!-- LOGO -->
+        <a href="#" class="navbar-brand mr-0 mr-md-2 logo">
+            <span class="logo-lg">
+                <img src="assets/images/logo_mixta_web.png" alt="" height="32" />
+            </span>
+            <span class="logo-sm">
+                <img src="assets/images/logo_small.png" alt="" height="24">
+            </span>
+        </a>
+        <span class="logo-sm d-sm-block mt-3 d-lg-none">
+            <img src="assets/images/logo_mixta_web.png" alt="" height="32" />
+        </span>
+
+        <ul class="navbar-nav flex-row ml-auto d-flex list-unstyled topnav-menu float-right mb-0">
+            <li class="d-none d-sm-block p-l-10">
+                <a href="mortgagecalculator.html" class="text-black navbar-url">Mortgage Calculator |</a>
+            </li>
+
+            <li class="d-none d-sm-block p-l-10">
+                <a href="applicationform.html" class="text-black navbar-url">Customer Application |</a>
+            </li>
+
+            <li class="d-none d-sm-block p-l-10">
+                <a href="dashboard.html" class="text-black navbar-url">Agent Dashboard </a>
+            </li>
+
+        </ul>
+    </div>
+
+</div>
+<!-- end Topbar -->
+
+        <div class="account-pages m-t-10 my-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="row">
+                                    <div class="col-md-12 p-5">
+                                        <!-- <div class="mx-auto mb-5">
+                                            <a href="#">
+                                                <img src="assets/images/logo_mixta_web.png" alt="" height="50" />
+                                            </a>
+                                        </div> -->                                     
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <form class="form-horizontal">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 card-body">
+                                                                    <h4 class="headings-color color-mixta">Mortgage Calculator</h4>
+                                                                    <p class="text-muted">calculate your mortgage</p>
+                                                                </div>
+                                                                <!-- end col -->
+                                                                <div class="col-md-8">
+                                                                    <div class="row">
+                                                                        <div class="form-group col-lg-6">
+                                                                            <label for="firstname">Price of Property</label>
+                                                                            <input type="text" class="form-control" id="firstname" placeholder="100,000">
+                                                                        </div>
+                    
+                                                                        <div class="form-group col-lg-6">
+                                                                            <label for="firstname">Mortgage Rate</label>
+                                                                            <input type="text" class="form-control" id="lastname" placeholder="10%">
+                                                                        </div>
+                    
+                                                                        <div class="form-group col-lg-6">
+                                                                            <label for="firstname">Years to Pay</label>
+                                                                            <input type="text" class="form-control" id="lastname" placeholder="Duration">
+                                                                        </div>
+                    
+                                                                        <div class="form-group col-lg-6">
+                                                                            <label for="firstname">Years to Pay</label>
+                                                                            <select data-plugin="customselect" class="form-control">
+                                                                                <option value="0">Monthly</option>
+                                                                                <option value="1">Yearly</option>
+                                                                            </select>
+                                                                        </div>
+                    
+                                                                        <div class="form-group mb-0 ">
+                                                                            <div class="col">
+                                                                                <button type="submit" class="btn btn-primary">Calculate</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                            
+                                                    </div> <!-- end card-body -->
+                                                </div> <!-- end card-->
+                                            </div><!-- end col -->
+                                        </div>
+                                        <!-- end row -->
+                    
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h4 class="mb-3 header-title mt-0 color-mixta">Result</h4>
+                                                        <div class="table-responsive">
+                                                            <table id="basic-datatable" class="table ">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>Year</th>
+                                                                        <th>Beginning Balance</th>
+                                                                        <th>Interest</th>
+                                                                        <th>Annual Payment</th>
+                                                                        <th>Ending Balance</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <th>2020</th>
+                                                                        <td>100,000</td>
+                                                                        <td>1000</td>
+                                                                        <td>1,000,000</td>
+                                                                        <td>450,000</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                    
+                    
+                                                    </div> <!-- end card-body-->
+                                                </div> <!-- end card-->
+                                            </div>
+                                            <!-- end col -->
+                    
+                                        </div>
+                                        <!-- end row -->
+                    
+                                        
+
+                                    </div>
+
+                                </div>
+                                
+                            </div> <!-- end card-body -->
+                        </div>
+                        <!-- end card -->
+                        <!-- end row -->
+
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end page -->
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- datatable js -->
+        <script src="assets/libs/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/libs/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="assets/libs/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/libs/datatables/responsive.bootstrap4.min.js"></script>
+
+        
+        <!-- Datatables init -->
+        <script src="assets/js/datatables.init.js"></script>
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+        
+    </body>
+</html>

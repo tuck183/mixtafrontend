@@ -11,6 +11,10 @@
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favico.png">
 
+        <!-- plugin css -->
+        <link href="assets/libs/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -199,25 +203,74 @@
                         </div>
                     </div> <!-- container-fluid -->
 
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <form class="form-horizontal">
+                                        <div class="row">
+                                            <div class="col-lg-12">                                            
+                                                <p><strong class="header-title color-mixta">Filter</strong></p>
+                                            </div>
+                                            <div class="form-group col-lg-4">
+                                                <label for="firstname">Select Location</label>
+                                                <input type="email" class="form-control" id="lastname" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-3">
+                                                <label for="firstname">Select Time Range</label>
+                                                <select class="custom-select mb-2">
+                                                    <option value="1">Last 7 days</option>
+                                                    <option value="2">Last Month</option>
+                                                    <option value="3">Last Year</option>
+                                                </select>
+                                            </div>
+
+                                            
+                                            <div class="form-group col-lg-3">
+                                                <label for="firstname">Status</label>
+                                                <select class="custom-select mb-2">
+                                                    <option value="1">Processing</option>
+                                                    <option value="2">Approved</option>
+                                                    <option value="3">Declined</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-2 ">
+                                                <div class="col mt-4">
+                                                    <button type="submit" class="btn btn-primary">Search</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </form>
+        
+                                </div> <!-- end card-body -->
+                            </div> <!-- end card-->
+                        </div><!-- end col -->
+                    </div>
+                    <!-- end row -->
+
 
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="header-title mt-0 mb-1">My Commission</h4>
+                                    <h4 class="header-title mt-0 mb-1 color-mixta">My Commission</h4>
                                     <p class="sub-header">
                                         Breakdown of all commissions   </p>
 
                                     <div class="table-responsive">
-                                        <table class="table m-0">
+                                        <table id="basic-datatable" class="table ">
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
                                                     <th>Buyer Information</th>
                                                     <th>Payment Date</th>
-                                                    <th>Property Commission Rate</th>
-                                                    <th>Agent Commission</th>
-                                                    <th>Status</th>
+                                                    <th>Property ID</th>
+                                                    <th>Unit ID</th>
+                                                    <th>Amount</th>
+                                                    <th>Receipt No</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
@@ -226,9 +279,10 @@
                                                     <th scope="row">1</th>
                                                     <td>Ojukwu Nkom <br> <span class="text-muted">Emotan Gardens, Lagos</span></td>
                                                     <td>February 1, 2020</td>
-                                                    <td>10%</td>
+                                                    <td>10</td>
+                                                    <td>10</td>
                                                     <td>N450,000</td>
-                                                    <td>Pending</td>
+                                                    <td>39401</td>
                                                     <td>
                                                         <a href="#" class="primary"> View Information </a>
                                                     </td>
@@ -273,6 +327,16 @@
 
         <!-- Vendor js -->
         <script src="assets/js/vendor.min.js"></script>
+
+        <!-- datatable js -->
+        <script src="assets/libs/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/libs/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="assets/libs/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/libs/datatables/responsive.bootstrap4.min.js"></script>
+
+        <!-- Datatables init -->
+        <script src="assets/js/datatables.init.js"></script>
+
         <!-- App js -->
         <script src="assets/js/app.min.js"></script>
 
